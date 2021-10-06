@@ -1,0 +1,105 @@
+link zoon:
+http://ingeniaudea.edu.co/zoom-recordings/recordings/docenciaingenia111@udea.edu.co/99562013521/2021-02-28
+
+link iconos favicon:
+https://iconos8.es/
+nota respecto a icono: Estos tienen que estar en .ico
+existen conversores en internet para hacer esto, es una mala
+practica no hacerlo.
+
+CLASE NUMERO 7 
+
+En esta clase vamos a ver como hacer una pagina desde cero 
+usando html y css, sin los gestores de estilo, esto se hara
+desde cero.
+
+Primero que todo se define las tareas, esas van en el backlog
+en este caso el profe las dividio en dos sprints.
+
+sprint 1:
+1: crear el layout de la pagina
+2: agregar el titulo y favicon
+3: crear la estructura del header
+4: crear un boton para un nuevo post
+5: crear un boton para iniciar secion
+6: crear un boton para hacer el registro
+7: crear un boton para tener un cuadro de busqueda
+8: agregar integracion con iconos.
+
+sprint 2:
+1: Organizar la imagenes para que no se vean gigantes
+2: Crear un card para mostrar la foto y el nombre de la raza
+3: Hacer una animacion para que la imagen crezca cuando se 
+   le va a hacer click
+4: Redirigir a la pagina de cada raza al hacer click
+5: agregar a la fuente roboto
+6: agregar vista de likes, comentarios y visualizaciones
+   al card de las razas
+
+Git del Proyecto:
+
+Lo que siempre se pide es tener 3 branch
+
+1. Release
+2. main
+3. development
+
+y se hace un branch para cada tarea del sprint, entonces 
+existes un comando para sincronizar cuantos branches hay
+en todo el repositorio.
+
+Comando se llama ( git fetch --all)
+
+......................................
+
+Nosotros ya hemos realizado la primera tarea que era crear el
+layout, entonces lo que procede es hacer merge con la rama
+sprint1.
+En este caso lo haremos desde un pull request. 
+Pasos para hacer un pull request.
+1: Se va a la parte de pull request en git
+2: Se le da en compare & pull request.
+3: Se mira a donde se quiere pasar esa rama a que base en 
+   en este caso a la base sprint1
+4: En compare es la rama que se quiere meter en la base
+5: Despues de que git revise si se puede hacer el merge se 
+   le da click en "merge pull request" y confirmar. 
+
+......................................................
+
+Agregar favicon 
+
+El favicon es ese icono que sale al lado del titulo de la pagina.
+Se usa: <link rel="shortcut icon" href="" type="image/x-icon" />
+
+Donde : rel= es para decir de que se trata ese link
+        href = Es la direccion de la imagen
+        type= Es el tipo de imagen. 
+
+-.....................................................
+Crear el Header. 
+
+Se procede con lista desordenada donde ponemos lo que queremos
+tener en el header.
+Nuevo post
+busqueda
+iniciar secion
+registro
+
+Procedemos a darle stylo a ese header, para eso, comenzamos
+creando un selector de tipo etiqueta, donde decirmos que 
+ninguna lista desordenada (ul) tenga las viñetas. 
+
+Ahora lo que hacemos es poner un display flex para tratar de
+organizar ese menu de forma bonita.
+
+Conflicto en github.
+
+Al tratar de hacer el merge con la rama sprint1 se presenta
+un conflicto ya que en los dos archivos en la misma linea,
+tenemos un link entonces git no sabe que link dejar, tenemos
+link para el stilo css. y link para el favicon.
+
+
+
+
